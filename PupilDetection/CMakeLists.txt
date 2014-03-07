@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(PupilDetection.cpp)
+find_package(OpenCV REQUIRED)
+add_executable(PupilDetection PupilDetection.cpp)
+target_link_libraries(PupilDetection ${OpenCV_LIBS})
